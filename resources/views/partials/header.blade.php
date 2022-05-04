@@ -16,4 +16,5 @@
             </nav>
         </div>
     </div>
+    {{-- @dump($menu) --}}
 </header>

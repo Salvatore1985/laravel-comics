@@ -118,3 +118,22 @@ button#btn-series {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+div.cover {
+    text-transform: uppercase;
+    margin-top: 2rem;
+    padding: 1rem;
+
+    a {
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        h5 {
+            padding: 1rem 0;
+        }
+    }
+}
