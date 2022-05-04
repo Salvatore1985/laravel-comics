@@ -8,7 +8,7 @@
                 <div class="cover">
                     <a href="#">
                         <img src="{{$cover['thumb']}}" alt="CoverType" />
-                        <h5>{{ $cover['type'] }}</h5>
+                        <h5>{{ $cover['series'] }}</h5>
                     </a>
                 </div>
             @endforeach
@@ -16,7 +16,7 @@
         <button>load more</button>
     
         <section class="my-container-buy ">
-         {{--    @dump($navbuyComics) --}}
+           {{--  @dump($navbuyComics) --}}
           <nav>
             <div class="cover-bay my-d-flex">
                 @foreach ($navbuyComics  as $item)

@@ -14,11 +14,6 @@ a {
     text-decoration: none;
 }
 
-
-.my-d-flex {
-    display: flex;
-}
-
 .my-p-1 {
     padding: 1rem;
 }
@@ -27,50 +22,110 @@ a {
     padding: 4rem;
 }
 
-div.my-w-70 {
+.my-d-flex {
+    display: flex;
+}
+
+.my-justify-content-between {
+    justify-content: space-between;
+}
+
+.my-justify-content-end {
+    justify-content: end;
+}
+
+.my-align-items-center {
+    align-items: center;
+}
+
+.my-text-black {
+    color: black;
+}
+
+.my-w-70 {
     width: 70%;
     margin: 0 auto;
 }
 
-div.header-content {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.my-text-decoration-none {
+    text-decoration: none;
 }
 
-.my-nav-header {
-    display: flex;
-    align-items: center;
+.my-text-transform-uppercase {
+    text-transform: uppercase;
+}
+
+.my-list-style-type-none {
+    list-style-type: none;
+}
+
+div.header-content {
     height: 100px;
 
-    li {
-        line-height: 100px;
-        list-style-type: none;
-        margin-left: 1.5rem;
-        position: relative;
+}
 
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: black;
-        }
+.my-height-100 {
+    height: 100px;
+}
 
-        :hover {
-            color: RGB(2, 130, 249);
+.my-ml-6 {
+    margin-left: 1rem;
+}
+
+#header-nav {
+    width: 70%;
+
+    height: 100px;
+    margin: 0 auto;
+    font-size: 0.7rem;
+
+    div {
+        width: 20%;
+
+        img {
+            height: 70%;
+
         }
+    }
+
+    nav {
+        width: 80%;
+
+        ul {
+            li {
+                line-height: 90px;
+            }
+        }
+    }
+
+}
+
+li.active {
+    border-bottom: 5px solid $brand_primary;
+
+    a {
+        color: $brand_primary;
     }
 }
 
-li:active {
-    border-bottom: 5px solid RGB(2, 130, 249);
-}
+li:hover {
+    border-bottom: 5px solid $brand_primary;
 
-#logo img {
-    width: 80%;
+    a {
+        color: $brand_primary;
+    }
 }
 
 /* main */
+
+.JumbotronMain {
+    height: 45vh;
+    background-color: rgb(73, 136, 190);
+    background-image: url("/img/jumbotron.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .main-container {
     background-color: #1c1c1c;
 }
@@ -104,26 +159,18 @@ button {
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    text-transform: uppercase;
     cursor: pointer;
 }
 
 button#btn-series {
     font-size: 1rem;
-    text-transform: uppercase;
     position: relative;
     left: 20%;
     top: -40px;
 }
 
-.JumbotronMain {
-    height: 40vh;
-    background-color: rgb(73, 136, 190);
-    background-image: url("/img/jumbotron.jpg");
-
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+/* cover-main */
 div.cover {
     text-transform: uppercase;
     margin-top: 2rem;
@@ -138,121 +185,9 @@ div.cover {
         }
 
         h5 {
-            padding: 1rem 0;
-        }
-    }
-}
-
-div.cover-bay {
-    text-transform: uppercase;
-    padding: 2rem 1rem;
-
-    a {
-        div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                width: 50px;
-                height: 50px;
-                object-fit: contain;
-            }
-        }
-
-        span {
-            padding: 0 1rem;
             font-size: 0.8rem;
-        }
-    }
-}
-
-/* footer */
-.footer-top {
-    background-image: url(/img/footer-bg.jpg);
-    background-size: cover;
-    height: 500px;
-}
-
-.footer-top section.my-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-div#logo {
-    height: 500px;
-
-    img {
-        width: 120%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-}
-
-.footer-bottom {
-    background-color: $brand_secondary;
-}
-
-.wrapped-link {
-    display: flex;
-}
-
-div {
-    padding: 1rem;
-
-    h5 {
-        text-transform: uppercase;
-        color: white;
-        padding: 1rem 0;
-    }
-
-    ul {
-        list-style-type: none;
-
-        li {
-            padding: 0.3rem 0;
-
-            a {
-                text-transform: capitalize;
-                color: #747373;
-                font-size: 0.8rem;
-            }
-        }
-    }
-}
-
-.wrapped-social {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    button {
-        background-color: $brand_secondary;
-        border: 2px solid $brand_primary;
-        color: white;
-        padding: 0.5rem;
-        text-transform: uppercase;
-        margin: 1.5rem;
-        cursor: pointer;
-    }
-
-    li:nth-child(1) {
-        a {
-            color: $brand_primary;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-    }
-
-    ul {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-
-        li {
-            padding: 0 0.5rem;
+            padding: 1rem 0;
+            width: 150px;
         }
     }
 }

@@ -1,20 +1,24 @@
 
-<header>
-    <div class="my-w-70">
-        <div class="header-content">
-          <div id="logo">
-            <img src="{{asset("img/dc-logo.png")}}" alt="logo comics"/>
-          </div>
-          <nav>
-            <ul class="my-nav-header">
-                @foreach ($menu as $item) 
-                <li>
-                  <a href="#">{{ $item['text']}}</a>
-                </li>
-                @endforeach
-            </ul>
-            </nav>
-        </div>
-    </div>
+<header class="my-d-flex " id="header-nav">
+  <div class="my-d-flex  my-align-items-center ">
+    <img src="{{asset("img/dc-logo.png")}}" alt="logo comics"/>
+  </div>
+  <nav class="my-d-flex my-justify-content-end "> 
+    <ul class="my-nav-header 
+                my-d-flex">
+          @foreach ($menu as $item) 
+              <li class="my-list-style-type-none my-ml-6 my-height-100 ">
+                <strong>
+                    <a 
+                        class="my-text-black 
+                        my-text-decoration-none
+                        my-text-transform-uppercase" 
+                        href="#">{{ $item['text']}}
+                    </a>
+                </strong> 
+              </li>
+          @endforeach
+    </ul>
+  </nav>
     {{-- @dump($menu) --}}
 </header>
