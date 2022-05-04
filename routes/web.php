@@ -16,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('app');
 });
+Route::get('/menu', function () {
+    $menu = config('menu');
+    return view('guest.menu', ["menu" => $menu]);
+})->name('menu');
+
 Route::get('/charactecrs', function () {
     return view('guest.charactecrs');
 })->name('charactecrs');
