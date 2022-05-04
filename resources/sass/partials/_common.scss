@@ -166,3 +166,93 @@ div.cover-bay {
         }
     }
 }
+
+/* footer */
+.footer-top {
+    background-image: url(/img/footer-bg.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+.footer-top section.my-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#logo {
+    height: 500px;
+
+    img {
+        width: 120%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.footer-bottom {
+    background-color: $brand_secondary;
+}
+
+.wrapped-link {
+    display: flex;
+}
+
+div {
+    padding: 1rem;
+
+    h5 {
+        text-transform: uppercase;
+        color: white;
+        padding: 1rem 0;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            padding: 0.3rem 0;
+
+            a {
+                text-transform: capitalize;
+                color: #747373;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+.wrapped-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+        background-color: $brand_secondary;
+        border: 2px solid $brand_primary;
+        color: white;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        margin: 1.5rem;
+        cursor: pointer;
+    }
+
+    li:nth-child(1) {
+        a {
+            color: $brand_primary;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+
+        li {
+            padding: 0 0.5rem;
+        }
+    }
+}

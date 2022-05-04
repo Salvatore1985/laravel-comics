@@ -31,14 +31,6 @@
                     </a>
                 @endforeach
             </div>
-      {{--       <ContentMainBuy
-              v-for="(element, index) in navbuyComics"
-              :key="index"
-              :CoverBuyText="element.text"
-              :CoverBuyUrl="element.url"
-              :CoverBuyCurrent="element.current"
-              :CoverBuySrc="element.src"
-            /> --}}
           </nav>
         </section>
       </div>

@@ -14,10 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $iconsList = config('iconsList');
     $navbuyComics = config('navbuyComics');
     $covers = config('comics');
     $menu = config('menu');
-    return view('app', ["menu" => $menu, "comics" => $covers, 'navbuyComics' => $navbuyComics]);
+    return view('app', [
+        "menu" => $menu,
+        "comics" => $covers,
+        'navbuyComics' => $navbuyComics,
+        'iconsList' => $iconsList
+    ]);
 });
 
 Route::get('/charactecrs', function () {
