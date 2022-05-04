@@ -71,7 +71,7 @@
         <section class="my-container">
          {{--  <FooterBot /> --}}
          <div class="wrapped-social">
-            <button>Sign-up now!</button>
+            <button id="sign-up">Sign-up now!</button>
             <ul>
               <li><a href="#">followe us</a></li>
               @foreach ($iconsList as $icon)

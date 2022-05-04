@@ -13,7 +13,7 @@
                 </div>
             @endforeach
         </section>
-        <button>load more</button>
+        <button class="btn-center">load more</button>
     
         <section class="my-container-buy ">
            {{--  @dump($navbuyComics) --}}

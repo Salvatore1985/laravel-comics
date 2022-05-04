@@ -141,6 +141,16 @@ button {
   padding: 0.5rem 3rem;
   border: 0;
   margin: 1.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button.btn-center {
+  background-color: #0C7CEC;
+  color: white;
+  padding: 0.5rem 3rem;
+  border: 0;
+  margin: 1.5rem;
   position: relative;
   left: 50%;
   transform: translate(-50%);
@@ -173,4 +183,106 @@ div.cover a h5 {
   font-size: 0.8rem;
   padding: 1rem 0;
   width: 150px;
+}
+
+/* cover-buy */
+div.cover-bay {
+  text-transform: uppercase;
+  padding: 2.5rem 1rem;
+}
+div.cover-bay a div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.cover-bay a div img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+div.cover-bay a span {
+  padding: 0 1rem;
+  font-size: 0.8rem;
+}
+
+/* footer */
+.footer-top {
+  background-image: url(/img/footer-bg.jpg);
+  background-size: cover;
+  height: 500px;
+}
+
+.footer-top section.my-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+div#logo {
+  height: 500px;
+}
+div#logo img {
+  width: 120%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.footer-bottom {
+  background-color: #303030;
+}
+
+.wrapped-link {
+  display: flex;
+}
+.wrapped-link div {
+  padding: 1rem;
+}
+.wrapped-link div h5 {
+  text-transform: uppercase;
+  color: white;
+  padding: 1rem 0;
+}
+.wrapped-link div ul {
+  list-style-type: none;
+}
+.wrapped-link div ul li {
+  padding: 0.3rem 0;
+}
+.wrapped-link div ul li a {
+  text-transform: capitalize;
+  color: #747373;
+  font-size: 0.8rem;
+}
+
+.wrapped-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.wrapped-social button#sign-up {
+  background-color: #303030;
+  border: 2px solid #0C7CEC;
+  color: white;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  margin: 1.5rem;
+  cursor: pointer;
+}
+.wrapped-social li:nth-child(1) a {
+  color: #0C7CEC;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wrapped-social ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.wrapped-social ul li {
+  padding: 0 0.5rem;
 }
