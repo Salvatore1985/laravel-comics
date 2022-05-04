@@ -61,3 +61,54 @@ li:active {
 #logo img {
   width: 80%;
 }
+
+/* main */
+.main-container {
+  background-color: #1c1c1c;
+}
+
+.my-container-buy {
+  background-color: #0C7CEC;
+}
+
+section.my-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section.my-container-buy nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #0C7CEC;
+  color: white;
+  padding: 0.5rem 3rem;
+  border: 0;
+  margin: 1.5rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+
+button#btn-series {
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  left: 20%;
+  top: -40px;
+}
+
+.JumbotronMain {
+  height: 40vh;
+  background-color: rgb(73, 136, 190);
+  background-image: url("/img/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

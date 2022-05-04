@@ -14,40 +14,47 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('app');
-});
-Route::get('/menu', function () {
     $menu = config('menu');
-    return view('guest.menu', ["menu" => $menu]);
-})->name('menu');
+    return view('app', ["menu" => $menu]);
+});
 
 Route::get('/charactecrs', function () {
-    return view('guest.charactecrs');
+    $menu = config('menu');
+    return view('guest.charactecrs', ["menu" => $menu]);
 })->name('charactecrs');
 Route::get('/comics', function () {
-    return view('guest.comics');
+    $menu = config('menu');
+    return view('guest.comics', ["menu" => $menu]);
 })->name('comics');
 Route::get('/movies', function () {
-    return view('guest.movies');
+    $menu = config('menu');
+    return view('guest.movies', ["menu" => $menu]);
 })->name('movies');
 Route::get('/tv', function () {
-    return view('guest.tv');
+    $menu = config('menu');
+    return view('guest.tv', ["menu" => $menu]);
 })->name('tv');
 Route::get('/games', function () {
-    return view('guest.games');
+    $menu = config('menu');
+    return view('guest.games', ["menu" => $menu]);
 })->name('games');
 Route::get('/collectivles', function () {
-    return view('guest.collectivles');
+    $menu = config('menu');
+    return view('guest.collectivles', ["menu" => $menu]);
 })->name('collectivles');
 Route::get('/videos', function () {
-    return view('guest.videos');
+    $menu = config('menu');
+    return view('guest.videos', ["menu" => $menu]);
 })->name('videos');
 Route::get('/fans', function () {
-    return view('guest.fans');
+    $menu = config('menu');
+    return view('guest.fans', ["menu" => $menu]);
 })->name('fans');
 Route::get('/news', function () {
-    return view('guest.news');
+    $menu = config('menu');
+    return view('guest.news', ["menu" => $menu]);
 })->name('news');
 Route::get('/shop', function () {
-    return view('guest.shop');
+    $menu = config('menu');
+    return view('guest.shop', ["menu" => $menu]);
 })->name('shop');
