@@ -5,9 +5,9 @@
 @section('main-content')
 <button id="btn-series">current series</button>
   <section class="my-container">
-      @foreach ($comics as $cover)
+      @foreach ($comics as $index => $cover)
           <div class="cover">
-              <a href="#">
+              <a href="{{route('info-cover',['id'=>$index])}}">
                   <img src="{{$cover['thumb']}}" alt="CoverType" />
                   <h5>{{ $cover['series'] }}</h5>
               </a>

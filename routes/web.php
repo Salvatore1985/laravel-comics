@@ -26,7 +26,7 @@ Route::get('/', function () {
         'iconsList' => $iconsList,
         'dccomics' => $dccomics
     ]);
-});
+})->name('home');
 
 Route::get('/charactecrs', function () {
     $dccomics = config('dccomics');

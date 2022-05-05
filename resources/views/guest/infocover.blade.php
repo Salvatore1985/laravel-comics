@@ -41,7 +41,7 @@
         </div>
 
         <div class="advertisement my-p-4 ">
-             <img src="{{$comic['thumb']}}" alt="">
+             <img src="/img/adv.jpg" alt="">
         </div>
     </div>
 </section>

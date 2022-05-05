@@ -1,6 +1,8 @@
 <header class="my-d-flex " id="header-nav">
   <div class="my-d-flex  my-align-items-center ">
-    <img src="{{asset("img/dc-logo.png")}}" alt="logo comics"/>
+    <a href="{{route('home')}}">
+       <img src="{{asset("img/dc-logo.png")}}" alt="logo comics"/>
+      </a>
   </div>
   <nav class="my-d-flex my-justify-content-end "> 
     <ul class="my-nav-header 

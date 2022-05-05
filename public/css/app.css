@@ -128,8 +128,8 @@ div.header-content {
 #header-nav div {
   width: 20%;
 }
-#header-nav div img {
-  height: 70%;
+#header-nav div a img {
+  width: 60%;
 }
 #header-nav nav {
   width: 80%;
