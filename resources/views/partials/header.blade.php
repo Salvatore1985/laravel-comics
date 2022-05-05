@@ -1,4 +1,3 @@
-
 <header class="my-d-flex " id="header-nav">
   <div class="my-d-flex  my-align-items-center ">
     <img src="{{asset("img/dc-logo.png")}}" alt="logo comics"/>
@@ -7,7 +6,7 @@
     <ul class="my-nav-header 
                 my-d-flex">
           @foreach ($menu as $item) 
-              <li class="my-list-style-type-none my-ml-6 my-height-100 ">
+              <li class="my-list-style-type-none my-ml-6 my-height-100 "id="nav-link">
                 <strong>
                     <a 
                         class="my-text-black 

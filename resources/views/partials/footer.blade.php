@@ -1,12 +1,20 @@
+
 <footer>
     <div class="footer-top">
         <section class="my-container">
           <section>
           {{--   <FooterTop /> --}}
           <div class="wrapped-link">
+            {{-- @dump($dccomics) --}}
             <div>
-              <h5>dc comics</h5>
+              <h5>{{$dccomics[0]['title']}}</h5>
               <ul>
+            {{--     
+                @foreach ($dccomics as $index => $item)
+                    <li>
+                      <a href="#">{{$item['link'][$index]}}</a>
+                    </li>
+                @endforeach --}}
                 <li>
                   <a href="#">characters</a>
                 </li>
@@ -29,14 +37,14 @@
                   <a href="#">news</a>
                 </li>
               </ul>
-              <h5>dc comics</h5>
+              <h5>shop</h5>
               <ul>
                 <li><a href="#">shop DC</a></li>
                 <li><a href="#">shop DC collectibles</a></li>
               </ul>
             </div>
             <div>
-              <h5>dc comics</h5>
+              <h5>dc</h5>
               <ul>
                 <li><a href="#">terms of use</a></li>
                 <li><a href="#">privacy policy (new)</a></li>
@@ -51,7 +59,7 @@
               </ul>
             </div>
             <div>
-              <h5>dc comics</h5>
+              <h5>sites</h5>
               <ul>
                 <li><a href="#">dC</a></li>
                 <li><a href="#">MAD magazine</a></li>
