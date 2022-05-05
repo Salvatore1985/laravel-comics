@@ -113,11 +113,11 @@ div.header-content {
 }
 
 .border-b-1 {
-    border-bottom: 1px solid black;
+    border-bottom: 1.5px solid black;
 }
 
 .border-l-1 {
-    border-left: 1px solid black;
+    border-left: 1.5px solid black;
 }
 
 #header-nav {
@@ -370,18 +370,63 @@ section.cover-info {
     height: 75px;
     background-color: $brand_primary;
 
+    div {
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+
+        position: relative;
+
+        figure {
+            height: 220px;
+            width: 152px;
+            background-color: black;
+            position: absolute;
+            bottom: 10px;
+
+            img {
+                border: 1px solid white;
+                height: 100%;
+                width: 100%;
+
+            }
+
+            span.text-top {
+                top: .5px;
+                left: 1px;
 
 
+            }
+
+            span.text-bot {
+                bottom: 1px;
+                left: 1px;
+                width: calc(152px - 2px);
+                text-align: center;
+            }
+
+        }
+
+    }
+
+}
+
+span.text-top,
+span.text-bot {
+    position: absolute;
+    background-color: #00A9D9;
+    font-size: .7rem;
+    padding: 0.2rem 0.2rem;
 }
 
 section.single-cover {
     width: 100%;
-    height: 400px;
+
     background-color: white;
 
     div {
         width: 60%;
-        height: 50px;
+        height: 100%;
         margin: 0 auto;
 
 
@@ -390,7 +435,7 @@ section.single-cover {
             height: 100%;
 
             div.my-d-flex {
-
+                height: 50px;
                 width: 100%;
                 background-color: #55BA59;
 
@@ -408,7 +453,6 @@ section.single-cover {
 
         div.advertisement {
             width: 40%;
-            /* background-color: blue; */
             height: 100%;
         }
     }

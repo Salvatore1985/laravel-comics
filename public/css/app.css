@@ -112,11 +112,11 @@ div.header-content {
 }
 
 .border-b-1 {
-  border-bottom: 1px solid black;
+  border-bottom: 1.5px solid black;
 }
 
 .border-l-1 {
-  border-left: 1px solid black;
+  border-left: 1.5px solid black;
 }
 
 #header-nav {
@@ -340,15 +340,50 @@ section.cover-info {
   height: 75px;
   background-color: #0C7CEC;
 }
+section.cover-info div {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+section.cover-info div figure {
+  height: 220px;
+  width: 152px;
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+}
+section.cover-info div figure img {
+  border: 1px solid white;
+  height: 100%;
+  width: 100%;
+}
+section.cover-info div figure span.text-top {
+  top: 0.5px;
+  left: 1px;
+}
+section.cover-info div figure span.text-bot {
+  bottom: 1px;
+  left: 1px;
+  width: 150px;
+  text-align: center;
+}
+
+span.text-top,
+span.text-bot {
+  position: absolute;
+  background-color: #00A9D9;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.2rem;
+}
 
 section.single-cover {
   width: 100%;
-  height: 400px;
   background-color: white;
 }
 section.single-cover div {
   width: 60%;
-  height: 50px;
+  height: 100%;
   margin: 0 auto;
 }
 section.single-cover div div.cover-title {
@@ -356,6 +391,7 @@ section.single-cover div div.cover-title {
   height: 100%;
 }
 section.single-cover div div.cover-title div.my-d-flex {
+  height: 50px;
   width: 100%;
   background-color: #55BA59;
 }
@@ -367,7 +403,6 @@ section.single-cover div div.cover-title div.my-d-flex div.check-availability {
 }
 section.single-cover div div.advertisement {
   width: 40%;
-  /* background-color: blue; */
   height: 100%;
 }
 
