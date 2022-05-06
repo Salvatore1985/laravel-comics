@@ -12,7 +12,7 @@ return [
             "news",
         ]
     ],
-    /*  [
+    [
         "title" => "shop",
         "link" => [
             "shop DC",
@@ -45,5 +45,5 @@ return [
 
         ]
     ],
- */
+
 ];

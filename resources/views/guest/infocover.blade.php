@@ -45,14 +45,25 @@
         </div>
     </div>
 </section>
+
 <section class="single-cover-info">
-        <div class="cover-title">
-    
+    <div class="wrapped-info-cover">
+        <div class="cover-info-top my-d-flex ">
+            <div class="cover-info-top-left">
+                <h2>Talent</h2>
+                <div>
+                    <span>Art by:</span>
+                    {{-- <p>{{$comic ['artists']}}</p> --}}
+                </div>
+            </div>
+            <div class="cover-info-top-right">
+                <h2>Specs</h2>
+                <span>Written by:</span>
+            </div>
         </div>
-        <div class="advertisement">
-    
-        </div>
-    </section>
+        <div class="cover-info-bot"></div> 
+    </div>
+</section>
 
 
 {{-- {{$comic['title']}} --}}

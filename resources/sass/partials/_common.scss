@@ -369,6 +369,7 @@ div#logo {
     }
 }
 
+/* INFO COVER */
 section.cover-info {
     width: 100%;
     height: 75px;
@@ -470,7 +471,33 @@ section.single-cover-info {
     height: 350px;
     background-color: #F6F6F6;
 
+    div.wrapped-info-cover {
+        height: 100%;
+        width: 60%;
+        margin: 0 auto;
 
+        div.cover-info-top {
+            height: 80%;
+
+
+            div.cover-info-top-left {
+                width: 50%;
+                height: 100%;
+
+            }
+
+            div.cover-info-top-right {
+                width: 50%;
+                height: 100%;
+
+            }
+        }
+
+        div.cover-info-bot {
+            height: 20%;
+            background-color: #55BA59;
+        }
+    }
 
 
 }

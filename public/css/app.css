@@ -335,6 +335,7 @@ div#logo img {
   padding: 0 0.5rem;
 }
 
+/* INFO COVER */
 section.cover-info {
   width: 100%;
   height: 75px;
@@ -410,4 +411,24 @@ section.single-cover-info {
   width: 100%;
   height: 350px;
   background-color: #F6F6F6;
+}
+section.single-cover-info div.wrapped-info-cover {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+}
+section.single-cover-info div.wrapped-info-cover div.cover-info-top {
+  height: 80%;
+}
+section.single-cover-info div.wrapped-info-cover div.cover-info-top div.cover-info-top-left {
+  width: 50%;
+  height: 100%;
+}
+section.single-cover-info div.wrapped-info-cover div.cover-info-top div.cover-info-top-right {
+  width: 50%;
+  height: 100%;
+}
+section.single-cover-info div.wrapped-info-cover div.cover-info-bot {
+  height: 20%;
+  background-color: #55BA59;
 }
