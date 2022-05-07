@@ -22,7 +22,7 @@
                             my-justify-content-between 
                             my-align-items-center
                             my-px-1
-                            border-b-1
+                            border-b-1-black
                            ">
                     <span class="my-text-green"> U.S Price: <span class="my-text-white">{{$comic['price']}}</span></span>
                     <span class="my-text-transform-uppercase my-text-green " >available</span>
@@ -32,7 +32,7 @@
                             my-justify-content-center 
                             my-align-items-center
                             border-l-1
-                            border-b-1
+                            border-b-1-black
                 ">
                     <span class="my-text-white" >Check Availability </span>
                 </div>
@@ -48,17 +48,80 @@
 
 <section class="single-cover-info">
     <div class="wrapped-info-cover">
-        <div class="cover-info-top my-d-flex ">
-            <div class="cover-info-top-left">
-                <h2>Talent</h2>
-                <div>
-                    <span>Art by:</span>
-                    {{-- <p>{{$comic ['artists']}}</p> --}}
+        <div class="cover-info-top my-d-flex  my-justify-content-between ">
+            <div class="cover-info-top-left ">
+                <h2 class=" border-b-1-gray my-py-2">Talent</h2>
+                <div class="my-d-flex 
+                            my-justify-content-between 
+                            info-written
+                            ">
+                    <div class="border-b-1-gray my-py-1">
+                        <span>Art by:</span>
+                    </div>
+                    <p class="border-b-1-gray 
+                              my-py-1
+                              my-text-color-primary
+                              ">
+                        {{(implode(", ",$comic['artists']))}}
+                    </p>
                 </div>
+                <div class="my-d-flex 
+                            my-justify-content-between 
+                            info-written
+                            ">
+                    <div class="my-py-1 border-b-1-gray">
+                        <span>Written by:</span>
+                    </div>
+                    <p class="border-b-1-gray
+                              my-py-1
+                              my-text-color-primary
+                              ">
+                        {{(implode(", ",$comic['writers']))}}
+                    </p>
+                </div>
+                
             </div>
-            <div class="cover-info-top-right">
-                <h2>Specs</h2>
-                <span>Written by:</span>
+            <div class="cover-info-top-right ">
+                <h2 class=" border-b-1-gray my-py-2">Specs</h2>
+                <div class="my-d-flex 
+                            my-justify-content-between 
+                            info-written
+                            
+                            ">
+                    <div class="border-b-1-gray my-py-1">
+                        <span>Series:</span>
+                    </div>
+                    <p class="border-b-1-gray
+                     my-py-1
+                     my-text-transform-uppercase
+                     my-text-color-primary
+                     ">
+                        {{$comic['series']}}
+                    </p>
+                </div>
+                  <div class="my-d-flex 
+                            my-justify-content-between 
+                            info-written
+                            ">
+                    <div class="border-b-1-gray my-py-1">
+                        <span>U.S Price:</span>
+                    </div>
+                    <p class="border-b-1-gray  my-py-1">
+                        {{$comic['price']}}
+                    </p>
+                </div>
+                 <div class="my-d-flex 
+                            my-justify-content-between 
+                            info-written
+                            
+                            ">
+                    <div class="border-b-1-gray my-py-1">
+                        <span>On Sale Date:</span>
+                    </div>
+                    <p class="border-b-1-gray  my-py-1">
+                        {{$comic['sale_date']}}
+                    </p>
+                </div>
             </div>
         </div>
         <div class="cover-info-bot"></div> 

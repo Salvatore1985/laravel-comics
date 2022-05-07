@@ -112,8 +112,12 @@ div.header-content {
     margin-left: 1rem;
 }
 
-.border-b-1 {
+.border-b-1-black {
     border-bottom: 1.5px solid black;
+}
+
+.border-b-1-gray {
+    border-bottom: 1.5px solid #D8D8D8;
 }
 
 .border-l-1 {
@@ -468,7 +472,7 @@ section.single-cover {
 
 section.single-cover-info {
     width: 100%;
-    height: 350px;
+    /*  height: 350px; */
     background-color: #F6F6F6;
 
     div.wrapped-info-cover {
@@ -481,13 +485,14 @@ section.single-cover-info {
 
 
             div.cover-info-top-left {
-                width: 50%;
+                width: 45%;
                 height: 100%;
+
 
             }
 
             div.cover-info-top-right {
-                width: 50%;
+                width: 45%;
                 height: 100%;
 
             }
@@ -500,4 +505,22 @@ section.single-cover-info {
     }
 
 
+}
+
+.info-written {
+    div {
+        width: 30%;
+    }
+
+    p {
+        width: 70%;
+        font-size: 0.8rem;
+        padding-right: 0.3rem;
+
+
+    }
+}
+
+.my-text-color-primary {
+    color: $brand_primary;
 }
