@@ -70,7 +70,7 @@
                     <a href="{{ $icon['url']}}">
                     <img
                    {{--  src="{{asset("img/"$icon['icons']")}}" --}}
-                        src="img/{{$icon['icons']}}"
+                        src="{{asset("img/".$icon['icons'])}}"
                         alt={{ $icon['alt']}}
                     /></a>
                 </li>
